@@ -121,19 +121,20 @@ $card-link-text-transform: none;
 // Header
 $header-block-padding: $size-9;
 
-$header-font-family: $font-family-accent;
+$header-font-family: $font-family-base;
 $header-font-size: $body-font-size;
 $header-font-weight: $font-weight-default;
 $header-letter-spacing: 0;
-$header-text-transform: uppercase;
+$header-text-transform: auto;
 
 $header-background-color: $color-neutral-200;
 $header-color: $color-neutral-800;
 
 // Navigation header
-$navigation-gap: 0rem;
-$navigation-color: 0rem;
+$navigation-gap: $size-10;
+$navigation-color: $header-color;
 $navigation-link-padding: 0rem;
+$navigation-background-color: $header-background-color;
 
 // Footer
 $footer-font-family: $font-family-base;

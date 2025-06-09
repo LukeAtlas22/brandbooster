@@ -8,9 +8,13 @@
   letter-spacing: $header-letter-spacing;
   background-color: $header-background-color;
   color: $header-color;
+  display: flex;
+  justify-content: space-between;
 
   &__logo {
   }
+
   &__navigation {
+    display: flex;
   }
 }
