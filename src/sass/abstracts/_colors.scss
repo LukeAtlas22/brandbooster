@@ -52,25 +52,27 @@ $colors: (
     400: $-clr-teal-400,
     700: $-clr-teal-700,
   ),
-  extra: (
-    pink-100: $-clr-pink-100,
-    pink-300: $-clr-pink-300,
-    pink-700: $-clr-pink-700,
-
-    yellow-100: $-clr-yellow-100,
-    yellow-300: $-clr-yellow-300,
-    yellow-700: $-clr-yellow-700,
-
-    cyan-100: $-clr-cyan-100,
-    cyan-300: $-clr-cyan-300,
-    cyan-700: $-clr-cyan-700,
+  pink: (
+    100: $-clr-pink-100,
+    300: $-clr-pink-300,
+    700: $-clr-pink-700,
+  ),
+  cyan: (
+    100: $-clr-cyan-100,
+    300: $-clr-cyan-300,
+    700: $-clr-cyan-700,
+  ),
+  yellow: (
+    100: $-clr-yellow-100,
+    300: $-clr-yellow-300,
+    700: $-clr-yellow-700,
   ),
 );
 
 // Contextual Tokens
 $color-neutral-100: var(--neutral-100);
 $color-neutral-200: var(--neutral-200);
-$color-neutral-500: var(--neutral-600);
+$color-neutral-500: var(--neutral-500);
 $color-neutral-800: var(--neutral-800);
 
 $color-primary-100: var(--primary-100);
@@ -83,14 +85,14 @@ $color-accent-300: var(--accent-300);
 $color-accent-400: var(--accent-400);
 $color-accent-700: var(--accent-700);
 
-$color-extra-pink-100: var(--extra-pink-100);
-$color-extra-pink-300: var(--extra-pink-300);
-$color-extra-pink-700: var(--extra-pink-700);
+$color-pink-100: var(--pink-100);
+$color-pink-300: var(--pink-300);
+$color-pink-700: var(--pink-700);
 
-$color-extra-yellow-100: var(--extra-yellow-100);
-$color-extra-yellow-300: var(--extra-yellow-300);
-$color-extra-yellow-700: var(--extra-yellow-700);
+$color-cyan-100: var(--cyan-100);
+$color-cyan-300: var(--cyan-300);
+$color-cyan-700: var(--cyan-700);
 
-$color-extra-cyan-100: var(--extra-cyan-100);
-$color-extra-cyan-300: var(--extra-cyan-300);
-$color-extra-cyan-700: var(--extra-cyan-700);
+$color-yellow-100: var(--yellow-100);
+$color-yellow-300: var(--yellow-300);
+$color-yellow-700: var(--yellow-700);
