@@ -1,8 +1,17 @@
 @use "../abstracts/" as *;
 
 .heading-1 {
-  @include heading($font-size-900);
+  @include heading($primary-heading-font-size);
 }
 .heading-2 {
-  @include heading($font-size-800);
+  @include heading($secondary-heading-font-size);
+}
+.heading-3 {
+  @include heading($tertiary-heading-font-size);
+}
+
+*:is(.bg-blue-700) .heading-1,
+*:is(.bg-blue-700) .heading-2,
+*:is(.bg-blue-700) .heading-3 {
+  color: $heading-color-inverted;
 }

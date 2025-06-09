@@ -27,5 +27,9 @@
 }
 
 section {
-  padding-block: $section-padding-block;
+  padding-block: $section-padding-block-mobile;
+
+  @include mq(min, width, medium) {
+    padding-block: $section-padding-block-desktop;
+  }
 }

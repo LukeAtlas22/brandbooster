@@ -8,10 +8,12 @@
 // ====================================== //
 
 // Colors
-$color-text-default: $color-primary-700;
-$color-background-default: $color-primary-100;
-$color-text-interactive-default: $color-accent-400;
-$color-text-interactive-hover: $color-accent-500;
+$color-text-default: $color-neutral-800;
+$color-background-default: $color-neutral-100;
+$color-text-inverted: $color-neutral-100;
+$color-background-inverted: $color-primary-700;
+$color-text-interactive-default: $color-primary-400;
+$color-text-interactive-hover: $color-accent-700;
 
 // Letter spacing
 $letter-spacing-loose: 0.16em;
@@ -20,7 +22,7 @@ $letter-spacing-default: 0;
 // Body
 $body-font-family: $font-family-base;
 $body-font-size: $font-size-400;
-$body-line-height: 1.5;
+$body-line-height: 1.7;
 $body-font-weight: $font-weight-default;
 $body-text-color: $color-text-default;
 $body-background-color: $color-background-default;
@@ -33,19 +35,20 @@ $link-color-hover: $color-text-interactive-hover;
 $grid-gap: $size-8;
 $flex-group-gap: $size-4;
 
-$hero-padding-block: clamp(15rem, 15vh, 20rem);
-$section-padding-block: clamp($size-12, 10vh, $size-13);
+$section-padding-block-mobile: 3.75rem;
+$section-padding-block-desktop: 5rem;
 
-$card-body-padding: clamp($size-8, 3.5vw, $size-12);
+$card-body-padding: 1.5rem;
 
-$container-min-margin-inline: $size-4;
-$container-max-width: 60rem;
-$container-max-width-narrow: 40rem;
+$container-min-margin-inline: $size-8;
+$container-max-width: 68.75rem;
+$container-max-width-narrow: 42.5rem;
 $container-max-width-wide: 75rem;
 
 // Border-radius
-$border-radius-1: $size-2;
-$border-radius-2: $size-4;
+$border-radius-1: $size-1;
+$border-radius-2: $size-2;
+$border-radius-3: $size-4;
 
 // Shadows
 $box-shadow-1: 0 $size-1 $size-4 rgb(0 0 0 / 0.05);
@@ -60,32 +63,33 @@ $box-shadow-2: 0 $size-1 $size-4 rgb(0 0 0 / 0.15);
 $heading-font-family: $font-family-accent;
 $heading-font-size-default: $font-size-600;
 $heading-font-weight: $font-weight-bold;
-$heading-color-default: $body-text-color;
+$heading-color-default: $color-primary-700;
+$heading-color-inverted: $color-neutral-100;
 $heading-letter-spacing: $letter-spacing-default;
 $heading-line-height: 1;
-$heading-text-transform: uppercase;
+$heading-text-transform: auto;
 
 // Buttons
 $button-font-family: $body-font-family;
-$button-font-weight: $font-weight-bold;
-$button-font-size: $font-size-600;
+$button-font-weight: $font-weight-default;
+$button-font-size: $button-font-size-default;
 $button-text-transform: none;
-$button-padding-default: 0.75em 2em;
-$button-padding-default-coarse: 0.85em 2em;
+$button-padding-default: 0.5em 1em;
+$button-padding-default-coarse: 0.6em 1.1em;
 $button-border: none;
 $button-border-radius: $border-radius-1;
 $button-letter-spacing: 0;
 $button-transition: 275ms ease;
 
-$button-accent-color: $color-neutral-100;
+$button-accent-color: $color-primary-700;
 $button-accent-background: $color-accent-400;
-$button-accent-color-hover: $color-neutral-100;
-$button-accent-background-hover: $color-accent-500;
+$button-accent-color-hover: $color-primary-700;
+$button-accent-background-hover: $color-accent-200;
 
 $button-primary-color: $color-neutral-100;
-$button-primary-background: $color-primary-700;
-$button-primary-color-hover: $color-neutral-100;
-$button-primary-background-hover: $color-primary-800;
+$button-primary-background: $color-primary-400;
+$button-primary-color-hover: $color-primary-400;
+$button-primary-background-hover: $color-extra-cyan-300;
 
 // Cards
 $card-flow-spacing: $size-3;
@@ -95,7 +99,7 @@ $card-font-size: $body-font-size;
 $card-line-height: 1.25;
 $card-text-align: center;
 $card-background-default: $body-background-color;
-$card-color-default: $color-primary-800;
+$card-color-default: $color-primary-700;
 $card-border-radius: $border-radius-2;
 $card-box-shadow: $box-shadow-1;
 
@@ -115,28 +119,30 @@ $card-link-letter-spacing: 1;
 $card-link-text-transform: none;
 
 // Header
+$header-block-padding: $size-9;
+
 $header-font-family: $font-family-accent;
-$header-letter-spacing: $letter-spacing-loose;
+$header-font-size: $body-font-size;
 $header-font-weight: $font-weight-default;
+$header-letter-spacing: 0;
 $header-text-transform: uppercase;
-$header-background-color: $color-primary-800;
-$header-block-padding: $size-8;
-$header-color: $color-primary-100;
 
-$header-list-gap: $flex-group-gap;
+$header-background-color: $color-neutral-200;
+$header-color: $color-neutral-800;
 
-$header-list-padding: $size-6 $size-3;
-$header-list-font-weight: $font-weight-bold;
-$header-list-color: $header-color;
+// Navigation header
+$navigation-gap: 0rem;
+$navigation-color: 0rem;
+$navigation-link-padding: 0rem;
 
 // Footer
-$footer-font-family: $font-family-accent;
-$footer-letter-spacing: $letter-spacing-loose;
+$footer-font-family: $font-family-base;
+$footer-letter-spacing: 0;
 $footer-font-weight: $font-weight-default;
-$footer-text-transform: uppercase;
-$footer-background-color: $color-primary-800;
-$footer-block-padding: $size-8;
-$footer-color: $color-primary-100;
+$footer-text-transform: none;
+$footer-background-color: $color-neutral-100;
+$footer-block-padding: $size-11;
+$footer-color: $color-neutral-800;
 
 $footer-list-gap: $flex-group-gap;
 
@@ -145,29 +151,33 @@ $footer-list-font-weight: $font-weight-bold;
 $footer-list-color: $header-color;
 
 //Form
-$form-col-spacing: $size-6; // Spazio verticale tra campi
-$form-row-spacing: $size-3; // Spazio orizzontale tra campi
-$form-group-spacing: $size-1; // Spazio tra label e input
-$form-label-button-margin-top: $size-5;
+// ========================================
+// Currently not using
+// If use, please update the index partial (@use form)
+// ========================================
+// $form-col-spacing: $size-6; // Spazio verticale tra campi
+// $form-row-spacing: $size-3; // Spazio orizzontale tra campi
+// $form-group-spacing: $size-1; // Spazio tra label e input
+// $form-label-button-margin-top: $size-5;
 
-$form-label-font-family: $body-font-family;
-$form-label-font-size: $font-size-400;
-$form-label-font-weight: $font-weight-bold;
-$form-label-color: $color-primary-700;
+// $form-label-font-family: $body-font-family;
+// $form-label-font-size: $font-size-400;
+// $form-label-font-weight: $font-weight-bold;
+// $form-label-color: $color-primary-700;
 
-$form-input-font-family: $body-font-family;
-$form-input-font-size: $font-size-400;
-$form-input-font-weight: $font-weight-semi-bold;
-$form-input-color: $color-primary-700;
-$form-input-border-radius: $border-radius-1;
-$form-input-border-default: 3px solid $color-primary-200;
-$form-input-border-hover: 3px solid $color-primary-300;
-$form-input-border-focus: 3px solid $color-primary-400;
-$form-input-background: $color-neutral-100;
-$form-input-padding: $size-3;
-$form-input-transition: 275ms ease;
+// $form-input-font-family: $body-font-family;
+// $form-input-font-size: $font-size-400;
+// $form-input-font-weight: $font-weight-semi-bold;
+// $form-input-color: $color-primary-700;
+// $form-input-border-radius: $border-radius-1;
+// $form-input-border-default: 3px solid $color-primary-200;
+// $form-input-border-hover: 3px solid $color-primary-400;
+// $form-input-border-focus: 3px solid $color-primary-400;
+// $form-input-background: $color-neutral-100;
+// $form-input-padding: $size-3;
+// $form-input-transition: 275ms ease;
 
-$form-placeholder-color: $color-primary-300;
-$form-placeholder-font-family: $body-font-family;
-$form-placeholder-font-size: $font-size-400;
-$form-placeholder-font-weight: $font-weight-semi-bold;
+// $form-placeholder-color: $color-primary-400;
+// $form-placeholder-font-family: $body-font-family;
+// $form-placeholder-font-size: $font-size-400;
+// $form-placeholder-font-weight: $font-weight-semi-bold;
