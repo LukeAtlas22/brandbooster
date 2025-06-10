@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+.flex-group-center {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $grid-gap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

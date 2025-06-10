@@ -1,4 +1,5 @@
 @use "../abstracts/tokens" as *;
+@use "../layout/" as *;
 
 .card {
   display: grid;
@@ -12,6 +13,15 @@
   border-radius: $card-border-radius;
   box-shadow: $card-box-shadow;
   text-align: $card-text-align;
+  position: relative;
+  overflow: clip;
+  container-type: inline-size;
+
+  &__content {
+    display: grid;
+    gap: $card-content-link-gap;
+    max-width: $card-content-max-width;
+  }
 
   &__title {
     font-family: $card-heading-font-family;
@@ -22,4 +32,40 @@
     line-height: $card-heading-line-height;
     text-transform: $card-heading-text-transform;
   }
+
+  &__image {
+    position: absolute;
+    right: -10%;
+    bottom: -27%;
+    width: 50%;
+    aspect-ratio: 1/1;
+    max-width: 8.5rem;
+
+    @container (width > 580px) {
+      position: absolute;
+      top: -7.5%;
+      left: 60.5%;
+      right: 0;
+      max-width: 18.5rem;
+    }
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.card[green] {
+  background-color: $card-background-green;
+}
+.card[yellow] {
+  background-color: $card-background-yellow;
+}
+.card[cyan] {
+  background-color: $card-background-cyan;
+}
+.card[pink] {
+  background-color: $card-background-pink;
 }

@@ -11,6 +11,12 @@
   border-radius: $button-border-radius;
   padding: $button-padding-default;
   transition: $button-transition;
+  background: $button-default-background;
+
+  &:hover,
+  &:focus {
+    background: $button-default-hover-background;
+  }
 
   @media (pointer: coarse) {
     padding: $button-padding-default-coarse;

@@ -4,35 +4,150 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="sass/main.scss">
-  <title>Site name</title>
+  <title>Document</title>
 </head>
 <body>
-  <header class="header">
-    <div class="container split space-between">
-      <div class="header__logo">A</div>
-      <div class="header__navigation">
-        <div class="nav-primary">
-          <div class="nav-primary__toggle-button"></div>
-          <ul class="nav-primary__list">
-            <li>
-              <a href="" class="nav-primary__link">Pricing</a>
-            </li>
-            <li>
-              <a href="" class="nav-primary__link">About us</a>
-            </li>
-            <li>
-              <a href="" class="nav-primary__link">Features</a>
-            </li>
-            <li>
-              <a href="" class="nav-primary__link">Contact</a>
-            </li>
-            <li>
-              <a href="" class="nav-primary__link">Careers</a>
-            </li>
-          </ul>
+  <main>
+    <header class="header">
+      <div class="container" data-type="wide">
+        <div class="split space-between">
+          <div class="header__logo">
+            <img src="icons/logo.svg" alt="">
+          </div>
+          <nav>
+            <ul class="nav-primary gap-9">
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
+    <section class="hero">
+      <div class="container" data-type="wide">
+        <div class="even-columns vertically-center">
+          <div class="flow-content gap-7">
+            <h1 class="heading-1">Welcome to <span class="clr-accent-400">BrandBoosters</span></h1>
+            <p>Dedicated to boosting your brand’s visibility and success that uses the latest strategies & techniques to help you reach your target audience and achieve your goals.</p>
+            <div class="flex-group gap-5">
+              <div class="button" data-type="primary">Join now</div>
+              <div class="button" >Learn more</div>
+            </div>
+          </div>
+          <img src="images/hero-img.jpg" alt="" class="hero__image">
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary-700 clr-neutral-100">
+      <div class="container">
+        <div class="even-columns vertically-center gap-12">
+          <div class="flow gap-7">
+            <h2 class="heading-2 clr-neutral-100">About us</h2>
+            <p>
+              BrandBoosters was founded with the mission of <b>helping businesses of all sizes</b> achieve their marketing goals by working closely with each client to <b>develop a customized strategy that delivers results.</b>
+            </p>
+            <a href="#" class="button | self-start" data-type="accent">Learn more about us</a>
+          </div>
+          <div class="full-height-image" data-position="right" top-offset="1rem" bottom-offset="0px">
+            <img class="bg-primary-200 | round-top" src="images/girl-image.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container | c-query">
+        <div class="flow gap-7">
+          <h2 class="heading-2 text-center">Features</h2>
+
+          <div class="cards-grid">
+            <div class="card" green>
+              <div class="card__content">
+                <h3 class="card__title">Content Creation</h3>
+                <p class="card__text">High-quality content that resonates with your audience and drives engagement.</p>
+                <a href="#" class="card__link">Try now</a>
+              </div>
+              <div class="card__image">
+                <img src="images/greencard.png" alt="">
+              </div>
+            </div>
+            <div class="card" yellow>
+              <div class="card__content">
+                <h3 class="card__title">Targeted Advertising</h3>
+                <p class="card__text">Reach your ideal customers with precision through our targeted advertising campaigns.</p>
+                <a href="#" class="card__link">Try now</a>
+              </div>
+              <div class="card__image">
+                <img src="images/yellowcard.png" alt="">
+              </div>
+            </div>
+            <div class="card" pink>
+              <div class="card__content">
+                <h3 class="card__title">Social Media</h3>
+                <p class="card__text">Let us handle your social media presence and engage with your audience on a personal level.</p>
+                <a href="#" class="card__link">Try now</a>
+              </div>
+              <div class="card__image">
+                <img src="images/pinkcard.png" alt="">
+              </div>
+            </div>
+            <div class="card" cyan>
+              <div class="card__content">
+                <h3 class="card__title">Analytics </h3>
+                <p class="card__text">Stay on top of your campaign’s performance with our detailed analytics and reporting.</p>
+                <a href="#" class="card__link">Try now</a>
+              </div>
+              <div class="card__image">
+                <img src="images/bluecard.png" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        
+          <div class="flow gap-8">
+            <nav>
+                <ul class="footer__nav">
+                  <li>
+                    <a href="#">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#">About us</a>
+                  </li>
+                  <li>
+                    <a href="#">Features</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Careers</a>
+                  </li>
+                </ul>
+            </nav>
+            <div class="fine-print fs-300 text-center">
+              <p>© 2023 Brand, Inc. • <a href="#">Privacy</a> • <a href="#">Terms</a> • <a href="#">Sitemap</a></p>
+            </div>
+          </div>
+        
+      </div>
+    </footer>
+  </main>
 </body>
 </html>

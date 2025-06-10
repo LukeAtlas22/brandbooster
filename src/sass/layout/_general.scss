@@ -11,13 +11,20 @@
   gap: $flex-group-gap;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .split {
   display: flex;
   align-items: center;
   gap: $grid-gap;
 }
 
-.flow-content {
+.flow-content,
+.flow {
   display: grid;
   gap: $grid-gap;
 }

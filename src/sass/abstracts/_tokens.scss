@@ -41,9 +41,9 @@ $section-padding-block-desktop: 5rem;
 $card-body-padding: 1.5rem;
 
 $container-min-margin-inline: $size-8;
-$container-max-width: 68.75rem;
+$container-max-width: 62.75rem;
 $container-max-width-narrow: 42.5rem;
-$container-max-width-wide: 75rem;
+$container-max-width-wide: 68.75rem;
 
 // Border-radius
 $border-radius-1: $size-1;
@@ -74,12 +74,15 @@ $button-font-family: $body-font-family;
 $button-font-weight: $font-weight-default;
 $button-font-size: $button-font-size-default;
 $button-text-transform: none;
-$button-padding-default: 0.5em 1em;
-$button-padding-default-coarse: 0.6em 1.1em;
+$button-padding-default: 0.72em 1em;
+$button-padding-default-coarse: 0.75em 1.1em;
 $button-border: none;
 $button-border-radius: $border-radius-1;
 $button-letter-spacing: 0;
 $button-transition: 275ms ease;
+
+$button-default-background: transparent;
+$button-default-hover-background: $color-neutral-200;
 
 $button-accent-color: $color-primary-700;
 $button-accent-background: $color-accent-400;
@@ -95,16 +98,22 @@ $button-primary-background-hover: $color-cyan-300;
 $card-flow-spacing: $size-3;
 $card-body-padding: $card-body-padding;
 $card-font-family: $body-font-family;
-$card-font-size: $body-font-size;
-$card-line-height: 1.25;
-$card-text-align: center;
+$card-font-size: $body-small-font-size;
+$card-line-height: 1.7;
+$card-text-align: left;
+
 $card-background-default: $body-background-color;
+$card-background-green: $color-accent-200;
+$card-background-yellow: $color-yellow-100;
+$card-background-pink: $color-pink-100;
+$card-background-cyan: $color-cyan-100;
+
 $card-color-default: $color-primary-700;
 $card-border-radius: $border-radius-2;
 $card-box-shadow: $box-shadow-1;
 
 $card-heading-font-family: $heading-font-family;
-$card-heading-font-size: $heading-font-size-default;
+$card-heading-font-size: $tertiary-heading-font-size;
 $card-heading-font-weight: $heading-font-weight;
 $card-heading-color-default: $heading-color-default;
 $card-heading-letter-spacing: $heading-letter-spacing;
@@ -117,6 +126,9 @@ $card-link-font-weight: $font-weight-bold;
 $card-link-color: $card-color-default;
 $card-link-letter-spacing: 1;
 $card-link-text-transform: none;
+
+$card-content-link-gap: $size-8 + 0.2rem;
+$card-content-max-width: 321px;
 
 // Header
 $header-block-padding: $size-9;
@@ -142,7 +154,9 @@ $footer-letter-spacing: 0;
 $footer-font-weight: $font-weight-default;
 $footer-text-transform: none;
 $footer-background-color: $color-neutral-100;
-$footer-block-padding: $size-11;
+$footer-block-padding-mobile: $section-padding-block-mobile;
+$footer-block-padding-desktop: $section-padding-block-desktop;
+$footer-top-padding-reset: 0; // 0 for yes, none for no
 $footer-color: $color-neutral-800;
 
 $footer-list-gap: $flex-group-gap;
